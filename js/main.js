@@ -86,7 +86,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  el.hasClass("menu") ? 100 : k * 200, 'easeInOutExpo' );
 					});
 					
 				}, 100);

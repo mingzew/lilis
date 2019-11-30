@@ -754,14 +754,33 @@ header {
       display: table-cell;
       vertical-align: top; }
     .menu-dish li .dish-img {
+      z-index:999;
       height: 70px;
       width: 70px;
       -webkit-border-radius: 40%;
       -moz-border-radius: 40%;
       -ms-border-radius: 40%;
       border-radius: 40%;
-      transition:transform 0.25s ease; }
+      top: 20px;
+      -webkit-transition:-webkit-transform .25s ease-in, -webkit-transform-origin .6s ease-in-out ;
+      -moz-transition:-moz-transform .25s ease-in, -moz-transform-origin .6s ease-in-out ;
+      -o-transition:-o-transform .25s ease-in, -o-transform-origin .6s ease-in-out ;
+      transition:transform .25s ease-in, transform-origin .6s ease-in-out;}
     .menu-dish li .dish-img:hover {
+      z-index:1000;
+      -webkit-transform-origin: top left;
+      -moz-transform-origin: top left;
+      -o-transform-origin: top left;
+      transform-origin: top left;
+      -webkit-transform:scale(4);
+      -moz-transition:scale(4);
+      -o-transition:scale(4);
+      transform:scale(4);
+      border-radius: 10%; }
+    .menu-dish li .dish-img:active {
+      z-index:1000;
+            -webkit-transform-origin: top left;
+      transform-origin: center left;
       -webkit-transform:scale(4);
       transform:scale(4); }
     .menu-dish li .text {
@@ -840,6 +859,11 @@ header {
         background: #FF6107;
         margin: 0 auto; }
 
+.outtro-heading {
+  margin-bottom: 3em;
+  position: relative;
+}
+
 .intro-heading {
   margin-bottom: 3em;
   position: relative; }
@@ -848,6 +872,9 @@ header {
     font-weight: 400;
     line-height: 1.4;
     position: relative; }
+  .intro-heading h3 { 
+    color: #969696;
+  }
   .intro-heading span {
     display: block;
     font-size: 18px;

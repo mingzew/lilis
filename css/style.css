@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -792,8 +792,15 @@ header {
         @media screen and (max-width: 768px) {
           .menu-dish li .text h3 {
             margin-top: 0px; } }
+      .menu-dish li .text .options {
+        padding-right: 3em;
+        margin-bottom: 0em;
+        color: #7d7d7d;
+        font-size: 14px; }
+      .menu-dish li .text ul .options {
+        padding: 0.5em; }
       .menu-dish li .text .cat {
-        padding-right: 3em; 
+        padding-right: 3em;
         color: #7d7d7d;
         font-size: 14px; }
       .menu-dish li .text .price {
@@ -803,7 +810,11 @@ header {
         font-size: 24px;
         color: #404044;
         font-family: "Lora", Georgia, serif; }
-        @media screen and (max-width: 480px) {
+      .menu-dish li .text .price.A{
+        top: -4px; }
+      .menu-dish li .text .price.B{
+        top: 0px; }
+      @media screen and (max-width: 480px) {
           .menu-dish li .text .price {
             right: 0;
             top: 0px;
@@ -872,7 +883,7 @@ header {
     font-weight: 400;
     line-height: 1.4;
     position: relative; }
-  .intro-heading h3 { 
+  .intro-heading h3 {
     color: #969696;
   }
   .intro-heading span {

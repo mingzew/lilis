@@ -923,7 +923,10 @@ header {
       padding: 0 20px;
       background: #FBFBFB;
       color: #b0b0b0; }
-
+.center {
+  width: 50%;
+  margin: 0 auto;
+}
 .article-entry {
   background: white; }
   .article-entry .blog-img {

@@ -129,10 +129,29 @@
 				   			<div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<div class="desc">
-											<div class="alert">
+											<div class="alert" id="alert">
 												<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-												<strong>Please note: We're on vacation starting Monday July 3rd, 2023, we'll be back on regular schedule on Wednesday July 26th, 2023. We can't wait to see you again <3</strong> 
+												<strong>Please note: We're closing early on Christmas Eve at 7pm; we'll be fully closed on Christmas Day and New Year's Day</strong> 
 											</div>
+											<script>
+												// Function to check and hide the banner after a specific date
+												function hideAlertAfterDate() {
+												  // Set the target date (January 1st, 2024, 11:59 EST)
+												  const targetDate = new Date('2024-01-01T11:59:00-05:00');
+											  
+												  // Get the current date
+												  const currentDate = new Date();
+											  
+												  // Compare the current date with the target date
+												  if (currentDate > targetDate) {
+													// If the current date is after the target date, hide the banner
+													document.getElementById('alert').style.display = 'none';
+												  }
+												}
+											  
+												// Call the function when the page loads
+												window.onload = hideAlertAfterDate;
+											</script>
 				   						<span class="icon"><i class="flaticon-ramen"></i></span>
 					   					<h1>Lili's Restaurant</h1>
                       					<h1>西安</h1>
